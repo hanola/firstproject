@@ -1,5 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,31 +10,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_sqlite" 
-    	android:onClick="goToSqlDemo" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="goToSqlDemo"
+        android:text="@string/button_sqlite" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_download"
-    	android:onClick="goToDownloadDemo" />
-    
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2"
+        android:onClick="goToDownloadDemo"
+        android:text="@string/button_download" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_googlemap"
-    	android:onClick="goToGoogleMapDemo" />
-    
-    
-    
-    
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:onClick="goToGoogleMapDemo"
+        android:text="@string/button_googlemap" />
 
-</LinearLayout>
+</RelativeLayout>
