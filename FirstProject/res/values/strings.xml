@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FirstProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_download">Go to download demo</string>
+    <string name="button_sqlite">Go to SQL demo</string>
+    <string name="button_googlemap">Go to GoogleMap demo</string>
+    <string name="title_activity_download_main">Download</string>
+    <string name="sql">YOU ARE IN SQL VIEW</string>
+    <string name="download">YOU ARE IN DOWNLOAD VIEW</string>
+    <string name="googlemaps">YOU ARE IN GOOGLEMAPS VIEW</string>
+    <string name="title_activity_sql">Sqlite</string>
+    <string name="title_activity_googlemap">GoogleMap</string>
+    <string name="hello">Hello world!</string>
+    
+
+</resources>
