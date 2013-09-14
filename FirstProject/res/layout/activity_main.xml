@@ -54,20 +54,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="46dp"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="26dp"
+        android:ems="10" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
+        android:layout_alignLeft="@+id/saved"
         android:layout_below="@+id/button3"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="14dp"
         android:text="Saved text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

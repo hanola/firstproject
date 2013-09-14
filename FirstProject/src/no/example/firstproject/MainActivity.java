@@ -12,12 +12,15 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	private static final String TAG = "no.example.firstproject";
+	
+	//creates variabel to store data from "saved" textedit
 	private EditText editBox;
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onCreate");
+        //EditBox set to textedit "saved"
         editBox =(EditText)findViewById(R.id.saved);
     }
 	
@@ -29,6 +32,7 @@ public class MainActivity extends Activity {
 	protected void onResume() {
 		super.onResume();
 		Log.i(TAG, "onResume");
+		//Retrives data from bundle object (memory) when app restarts. 
 		SharedPreferences prefs = getPreferences(0); 
         String restoredText = prefs.getString("text", null);
         if (restoredText != null) {
@@ -45,6 +49,7 @@ public class MainActivity extends Activity {
 	protected void onPause() {
 		super.onPause();
 		Log.i(TAG, "onPause");
+		//Data from textedit "saved" saved in Bundle (memory)
 		 SharedPreferences.Editor editor = getPreferences(0).edit();
 	        editor.putString("text", editBox.getText().toString());
 	        editor.putInt("selection-start", editBox.getSelectionStart());
