@@ -1,16 +1,16 @@
 package no.example.firstproject;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 	private static final String TAG = "no.example.firstproject";
 	
 	//creates variabel to store data from "saved" textedit
