@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends FragmentActivity {
 	private static final String TAG = "no.example.firstproject";
 	
-	//creates variabel to store data from "saved" textedit
+	//creates variabel funny funny to store data from "saved" textedit
 	private EditText editBox;
 	@Override
     public void onCreate(Bundle savedInstanceState) {
